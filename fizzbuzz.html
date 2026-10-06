@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz</title>
+</head>
+<body>
+  <script>
+    var output = [];
+    var num = 0;
+    function fizzBuzz(){
+      // num +=1;
+      for( let num=1; num <= 101; num++){
+      if (num % 3 === 0 && num % 5 === 0) {
+        output.push("FizzBuzz");
+      } else if (num % 3 === 0) {
+        output.push("Fizz");
+      } else if (num % 5 === 0) {
+        output.push("Buzz");
+      } else {
+        output.push(num);
+      }
+      
+    console.log(output);
+    }}
+    fizzBuzz();
+    
+    // iwant when i call the fubction it will add 1 to the number and push it to the array and print the array in the console
+  </script>
+</body>
+</html>

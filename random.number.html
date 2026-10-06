@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Random Number Generator</h1>
+  <p>Generated Number: <span id="randomNumber">-</span></p>
+  <button onclick="generateRandomNumber()">Generate Random Number</button>
+
+  <script>
+    //n=math.floor(Math.random() * n) + 1;
+    function generateRandomNumber() {
+      const randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100
+      document.getElementById('randomNumber').textContent = randomNumber;
+    }
+     let names = [omar,abdi,ali,amina,hamdi];
+    function whosPaying(names) {
+    
+/******Don't change the code above*******/
+    
+    //Write your code here.
+    
+   
+    let num = names.length 
+    const randomNum= Math.floor( Math.random()*num)-1;
+    var randomName = names[randomNum];
+    return "randomName" + "is going to buy lunch today";
+    
+    
+
+
+/******Don't change the code below*******/    
+}
+    </script>
+</body>
+</html>

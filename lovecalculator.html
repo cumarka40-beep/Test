@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>love calculator</title>
+</head>
+<body>
+  <h2>Love Calculator</h2>
+  <p>Find out how much you and your partner are compatible!</p>
+  <!-- <form id="loveForm">
+    <label for="name1">Your Name:</label>
+    <input type="text" id="name1" name="name1" required>
+    <br><br>
+    <label for="name2">Partner's Name:</label>
+    <input type="text" id="name2" name="name2" required>
+    <br><br>
+    <button type="submit">Calculate Love Percentage</button>
+  </form> -->
+  <script>
+    // function calculateLovePercentage(name1, name2) {
+    //   // Simple algorithm to calculate love percentage based on the length of names
+    //   const totalLength = name1.length + name2.length;
+    //   const lovePercentage = (totalLength % 100); // Ensures percentage is between 0 and 99
+    //   return lovePercentage;
+    // }
+
+    // document.getElementById('loveForm').addEventListener('submit', function(event) {
+    //   event.preventDefault();
+    //   const name1 = document.getElementById('name1').value;
+    //   const name2 = document.getElementById('name2').value;
+    //   const lovePercentage = calculateLovePercentage(name1, name2);
+    //   alert(`Love Percentage: ${lovePercentage}%`);
+    // });
+    prompt("Enter your name:");
+    prompt("Enter your partner's name:");
+    var lovePercentage = Math.floor(Math.random() * 100) + 1; // Generates a random love percentage between 1 and 100
+    if (lovePercentage < 50) {
+      alert(`your love score: ${lovePercentage}% LOW`);
+    } else if (lovePercentage >= 50 && lovePercentage < 80) {
+      alert(`your love score: ${lovePercentage}% MODERATE`);
+    } else {
+      alert(`your love score: ${lovePercentage}% HIGH`);
+    }
+    alert(`your love score: ${lovePercentage}% POWERFULL` );
+    //BMI Calculator Advanced (IF/ELSE)
+// Previously, we've created a function that is able to calculate the BMI. But once we get a result, we will want to tell the user what the number means.
+
+// Write a function that outputs (returns) a different message depending on the BMI.
+
+
+
+// BMI <18.5, the output should be: "Your BMI is <bmi>, so you are underweight."
+
+// BMI 18.5-24.9, the output should be "Your BMI is <bmi>, so you have a normal weight."
+
+// BMI >24.9, the output should be "Your BMI is <bmi>, so you are overweight."
+
+
+
+// The message MUST be returned as an output from your function. You should NOT NEED to use alert, prompt or console.log in this challenge.
+
+// IMPORTANT the message wording has to match precisely for the code to pass the validation. Including punctuation and capitalisation.
+    function bmiCalculator (weight, height) {
+      const bmi = weight / (height * height);
+      let interpretation;
+
+      if (bmi < 18.5) {
+        interpretation = `Your BMI is ${bmi}, so you are underweight.`;
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        interpretation = `Your BMI is ${bmi}, so you have a normal weight.`;
+      } else {
+        interpretation = `Your BMI is ${bmi}, so you are overweight.`;
+      }
+
+      return interpretation;
+}
+
+function isLeap(year) {
+    let year = 2000;
+    if(year%4 ===0){
+        if (year%100 ===0){
+            if(year%400 ===0){
+                return("it is Leap");
+            } else {
+                return("it is not Leap");
+            }
+          return("it is not Leap");
+        }
+    } else {
+      return("it is not Leap");
+    }
+       
+/**************Don't change the code above****************/    
+    
+    //Write your code here.    
+
+
+    
+
+/**************Don't change the code below****************/    
+
+}
+  </script>
+</body>
+</html>

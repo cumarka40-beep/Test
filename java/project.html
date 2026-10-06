@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Somali Feast Restaurant</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; text-align: center; }
+        .menu-card { background: white; border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        button { background-color: #2ecc71; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        button:hover { background-color: #27ae60; }
+        #total-display { font-size: 24px; color: #2c3e50; font-weight: bold; margin-top: 20px; background-color: #e8f8f5; padding: 15px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <h1>Kismaayo Kitchen Menu 🇸🇴</h1>
+    <div id="menu-container">
+        <!-- Your JavaScript loop will dynamically inject food items right here! -->
+    </div>
+
+    <div id="total-display">Total Bill: $0</div>
+
+    <script>
+        // 1. DATA STRUCTURE: An array of objects describing the dishes
+        let menu = [
+            { name: "Bariis Iyo Hilib (Rice & Meat)", price: 12 },
+            { name: "Sambuusi (3 Pieces)", price: 5 },
+            { name: "Mufo with Sesame Oil", price: 4 },
+            { name: "Cano Boore (Spiced Tea)", price: 3 }
+        ];
+
+        // 2. DOM SELECTION: Grab the total display element so we can update it later
+        let totalBill = 0;
+        let billDisplay = document.querySelector("#total-display");
+        let container = document.querySelector("#menu-container");
+
+        // 3. YOUR TASK: Loop through the menu array
+        for (let i = 0; i < menu.length; i++) {
+            ;
+            // A. Create a fresh container div box for this specific food item
+            let card = document.createElement("div");
+            card.className = "menu-card";
+            
+            // B. Fill the card box with HTML showing the food details and an order button
+            // Pay close attention to how we target the object keys: menu[i].name and menu[i].price
+            card.innerHTML = `
+                <h3>${menu[i].name}</h3>
+                <p>Price: $${menu[i].price}</p>
+                <button id="btn-${i}">Order Item</button>
+            `;
+            
+            // C. Inject this finished item card directly into our visual menu grid
+            container.appendChild(card);
+ 
+            // ============================================================
+            // 🚨 GRADUATION CHALLENGE CODE GOES HERE:
+            // 
+            // Write an Event Listener for the button inside this loop!
+            // 1. Select the specific button we just created using document.querySelector("#btn-" + i)
+            // 2. Add a "click" event listener to it.
+            // 3. Inside the event action, add the item's price (menu[i].price) to the totalBill variable.
+            // 4. Update the billDisplay textContent to show the new total: "Total Bill: $" + totalBill
+            // ============================================================
+            
+            // WRITE YOUR LOGIC CODE BELOW THIS LINE:
+            let button = document.querySelector("#btn-"+ i);
+            button.addEventListener("click",() =>{
+              totalBill = totalBill +  (menu[i].price);
+              billDisplay.textContent = "Total Bill:" + totalBill;
+            })
+
+        }
+    </script>
+</body>
+</html>

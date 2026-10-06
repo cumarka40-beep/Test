@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JS Program</title>
+</head>
+<body>
+
+    <h1>Look at the Console!</h1>
+    <p id="message">Old Text</p>
+    <h1 id="headline">Original Headline</h1>
+    <h3 id="myInfo">Omar Abdiarasak Mohamed
+        he is student at Hormuud University
+        he learn computer staffs
+    </h3>
+    <button id="actionBtn">Click Me!</button>
+    <!-- This line connects our JavaScript to our webpage -->
+    <script>
+        // Console.log("Hello World from my own file!");
+
+        // let highscore = 1500;
+        // let username = "PlayerOne";
+
+        // console.log(typeof highscore);
+        // console.log(typeof username);
+
+
+        // // 1. Ask the user for input and save it in a variable box
+        // let favoriteFood = prompt("What is your favorite food?");
+
+        // // 2. Output that back to the user in a pop-up alert
+        // alert(favoriteFood);
+
+
+        // let userAge = prompt("How old are you?");
+        // console.log("Your age is:");
+        // console.log(userAge);
+
+        // Operators
+        // let totalSum = 10 + 5;      // totalSum will hold 15
+        // let product = 4 * 2;       // product will hold 8
+        // let remainder = 10 % 3;    // remainder will hold 1
+        
+        // let apples = 12;
+        // let friends = 5;
+        // let leftoverApples = apples % friends;
+
+        // console.log("Leftover apples after sharing evenly:");
+        // console.log(leftoverApples);
+
+
+        // let number1 = "5";
+        // let number2 = 5;
+        // let result = number1 + number2;
+        // console.log(result);
+
+
+        //string manipulation
+
+        // let username = "alex";
+        // let standardGreeting = "Hello " + username + "!"; // The old way of gluing
+
+        // let modernGreeting = `Hello ${username}!`; // The modern way using backticks
+        // let loudGreeting = username.toUpperCase(); // Turns "alex" into "ALEX"
+        // console.log(loudGreeting);
+
+
+        // let password = " secret123 ";
+        // console.log("The length of your password is:");
+        // console.log(password.length);
+
+        //if statement
+
+//         if (condition) {
+//     // Code to run if the condition is TRUE
+// }
+
+    //  let userAge = 20;
+
+    // if (userAge >= 18) {
+    //     console.log("You are allowed to enter!");
+    // }
+
+    //exercise 1
+
+    // let score = 50;
+    // if (score < 100) {
+    //     console.log("Try again!");
+    // }
+
+    // exercise 2
+
+    // let temperature = 30;
+    // if (temperature > 40) {
+    //     console.log("It is boiling hot!");
+    // }
+
+    // let gold = 100;
+    // if (gold ______ 100) {
+    //     console.log("You win!");
+    // }
+
+    //correc one 
+
+    // let gold = 100;
+    // if (gold ==100) {
+    //     console.log("You win!");
+    // }
+
+
+    //else and else if
+    // let trafficLight = "yellow";
+
+    // if (trafficLight === "red") {
+    //     console.log("Stop!");
+    // } else if (trafficLight === "yellow") {
+    //     console.log("Slow down!");
+    // } else {
+    //     console.log("Go!");
+    // }
+
+    // exicise 3
+
+    // let score = 45;
+    // if (score >= 50) {
+    //     console.log("You passed!");
+    // } else {
+    //     console.log("You failed!");
+    // }
+    //  exercise2
+//    let balance = 0;
+//     if (balance > 10) {
+//         console.log("Buy a coffee");
+//     } else if (balance === 0) {
+//         console.log("Your account is empty!");
+//     } else {
+//         console.log("Go shopping");
+//     }
+   
+
+//     let finalGrade = "A";
+
+//     if(finalGrade == "A"){
+//         console.log("Great Job!");
+//     }else{
+//         console.log("Keep Practicing");
+//     }
+
+
+// case statement
+//  let dayNumber = 2;
+
+// switch (dayNumber) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     default:
+//         console.log("Another day");
+// }
+
+
+// // exercise
+// let fruit = "Apple";
+// switch (fruit) {
+//     case "Banana":
+//         console.log("Yellow fruit");
+//         break;
+//     case "Apple":
+//         console.log("Red fruit");
+//         break;
+//     default:
+//         console.log("Unknown fruit");
+// }
+
+// let tool = "Hammer";
+//     switch (tool) {
+//         case "Hammer":
+//             console.log("Fixing a nail!");
+//             // Uh oh, no break here!
+//         case "Wrench":
+//             console.log("Fixing a pipe!");
+//             break;
+//         default:
+//             console.log("No tools found");
+//     }
+
+
+
+//     let choice = 5;
+//     switch (choice) {
+//         case 1:
+//             console.log("Option 1");
+//             break;
+//         case 2:
+//             console.log("Option 2");
+//             break;
+//         default:
+//             console.log("Invalid Choice!");
+//     }
+   
+
+// Tell me what you think will print for these three!
+
+
+// for loop
+
+// for (initialization; condition; increment) {
+    // Code that will repeat
+// }
+
+// for (let i = 0; i < 3; i++) {
+//     console.log(`Lap number: ${i}`);
+// }
+
+// exercise
+
+// for (let i = 0; i < 5; i++) {
+//     console.log("Hello");
+// }
+
+// for (let i = 0; i <= 2; i++) {
+//         console.log(i);
+//     }
+
+//     for (let i = 0; i >= 0; i++) {
+//         console.log("Stuck!");
+//     }
+
+//     ```
+//     Will it print once and stop, or will it keep printing forever until your web browser freezes?
+
+// Give me your best thoughts on these three!
+
+  
+// while and do while loop
+
+// WHILE LOOP syntax
+// let counter = 0; // 1. Setup happens outside
+// while (counter < 3) {
+//     // 2. Code runs here
+//     counter++; // 3. Upkeep happens inside the braces
+// }
+
+// DO-WHILE LOOP syntax
+// let score = 100;
+// do {
+//     // This room runs FIRST before looking at any rules!
+//     console.log("Playing game...");
+// } while (score < 50);
+
+
+// let fuel = 2;
+// while (fuel > 0) {
+//     console.log("Driving...");
+//     fuel--; // Takes 1 fuel away each lap
+// }
+
+// let health = 0;
+// do {
+//     console.log("You have spawned into the arena!");
+// } while (health > 0);
+// exercise
+// Look at this while loop. What numbers will print out to the console?
+// let count = 1;
+// while (count < 4) {
+//     console.log(count);
+//     count++;
+// }
+// Look closely at this broken code. The programmer forgot the count++ line! What will happen when this runs in the browser?
+    // let count = 1;
+    // while (count < 4) {
+    //     console.log(count);
+    //     // Missing the step to make count grow!
+    // }
+
+    // Phase 2 — Logic Building | Lesson 6: Pattern Problems
+
+//     for (let i = 0; i < 2; i++) {
+//     // Outer loop controls rows
+//     for (let j = 0; j < 3; j++) {
+//         // Inner loop controls columns
+//     }
+// }
+
+// for (let row = 1; row <= 2; row++) {
+//     for (let col = 1; col <= 2; col++) {
+//         console.log(`Row ${row}, Col ${col}`);
+//     }
+// }
+
+    // exercise
+//     for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 2; j++) {
+//         console.log("Star");
+//     }
+// }
+//     let result = "";
+//     for (let i = 1; i <= 4; i++) {
+//         result = "*"; // Reset the line for a new row
+//         for (let j = 1; j <= i; j++) {
+//             result = result + "*"; // Add a star to the current row
+//         }
+//         console.log(result);
+//     }
+
+// Phase 2 — Logic Building | Lesson 7: Basic Debugging
+// let userAge = 18;
+
+// // Silent Bug: The programmer accidentally used < instead of >=
+// if (userAge < 16) { 
+//     console.log("You can get your driver's license!");
+// } else {
+//     console.log("You are too young!");
+// }
+
+// exercise 
+
+// let score = 100;
+// if (score === 100) {
+//     console.log("Perfect score!");
+// }
+// // Missing something down here?
+// let username = "Slayer99";
+//     console.log(user);
+
+// Phase 3 — Functions | Lesson 1: Introduction to Functions
+
+// Stage 1: Build the machine
+// function sayHello() {
+//     console.log("Welcome to the app!");
+//     console.log("We are glad you are here.");
+// }
+
+// // Stage 2: Turn on the machine twice
+// sayHello();
+// sayHello();
+
+// function showRules(){
+//     console.log("if you want to master programming you must learn well basics ")
+// }
+// showRules();
+
+// Lesson 2: Parameters and Arguments
+// 1. "customerName" is the PARAMETER (the placeholder slot)
+// function welcomeCustomer(customerName) {
+//     console.log(`Welcome back, ${customerName}!`);
+// }
+
+// // 2. "Alex" and "Sam" are the ARGUMENTS (the real values)
+// welcomeCustomer("Alex"); 
+// welcomeCustomer("Sam");
+
+
+// function showScore(player, points) {
+//     console.log(`${player} scored ${points} points!`);
+// }
+
+// showScore("PlayerOne", 50);
+
+
+// function introduce(job, firstName) {
+//         console.log(`Hello, my name is ${firstName} and I am a ${job}.`);
+//     }
+
+//     introduce("Teacher", "Alex");
+
+
+// function multiplyNumbers(num1,num2)    {
+//     console.log(num1 * num2);
+// }
+// multiplyNumbers();
+
+// Functions | Lesson 3: Return Values
+
+// function addNumbers(a, b) {
+//     return a + b; // Kicks the answer out of the machine
+// }
+
+// // We capture that kicked-out answer inside a fresh variable box!
+// let finalTotal = addNumbers(10, 5);
+
+// function square(number) {
+//     return number * number;
+// }
+
+// let sideLength = 4;
+// let area = square(sideLength); // area box now holds 16
+
+// console.log(area);
+
+// exercise
+// function testMachine() {
+//     return "Pizza";
+//     console.log("Burger"); // Will this ever run?
+// }
+
+// let food = testMachine();
+// console.log(food);
+
+// function doubleValue(num) {
+//         return num * 2;
+//     }
+
+//     let result = doubleValue(10);
+
+
+// function makeUppercase(text){
+//     return text.toUpperCase();
+// }
+// loudword= makeUppercase("hello");
+// console.log(loudword);
+
+
+// Functions | Lesson 4: Scope (Global vs. Local)
+// Now that you are building complex functions, we need to talk about where your variables are allowed to live. This is called Scope.
+//    Global Scope: A variable built out in the open (outside of any functions). Everyone across the entire script can see it and change it.
+
+// Local Scope: A variable built inside a specific function's curly braces {}. It is completely invisible to the outside world—it only exists while that function is running!
+// let globalSky = "Blue"; // GLOBAL: Out in the open
+
+// function hiddenRoom() {
+//     let localLamp = "Yellow"; // LOCAL: Inside the walls
+//     console.log(globalSky);  // Works! The room can look out at the sky.
+// }
+
+// console.log(localLamp); // CRASH! The outside world cannot see inside the room.
+
+// function playerOneInventory() {
+//     let gold = 50; // Local to player one
+//     console.log(gold);
+// }
+
+// function playerTwoInventory() {
+//     let gold = 100; // Local to player two
+//     console.log(gold);
+// }
+// exercise
+// function login() {
+//     let secretPassword = "12345";
+// }
+
+// login();
+// console.log(secretPassword);
+
+// let weather = "Sunny";
+
+//     function checkSky() {
+//         console.log(weather);
+//     }
+
+//     checkSky();
+
+// let score = 10;
+// function changeScore() {
+//     score = 99; // Changing the global score variable!
+// }
+// changeScore();
+// console.log(score);
+
+// Functions | Lesson 5: Arrow Functions
+// An Arrow Function is an updated, more compact syntax for writing standard functions. It does the exact same job as a regular function, but it strips away the bulky keywords like function and replaces them with a sleek fat-arrow symbol (=>).
+// TRADITIONAL syntax
+// function greet(name) {
+//     return `Hello ${name}`;
+// }
+
+// // ARROW FUNCTION syntax
+// const greet = (name) => {
+//     return `Hello ${name}`;
+// };
+
+// Ultimate one-liner shorthand
+// const multiplyByTwo = (num) => num * 2;
+
+// let answer = multiplyByTwo(5); // answer box holds 10
+// function sayGoodbye() {
+//         console.log("Bye!");
+//     }
+// let sayGoodbye = () => console.log("Bye!");    
+// sayGoodbye();
+
+// const square = (x) => {
+//     return x * x;
+// };
+// console.log(square(6));
+
+
+// Phase 4 — Data Structures | Lesson 1: Arrays Basics
+// let fruits = ["Apple", "Banana", "Cherry"];
+
+// let luckyNumbers = [7, 13, 21, 42];
+
+// // Reading the very first shelf (index 0)
+// let myFav = luckyNumbers[0]; 
+
+// console.log(myFav); // Prints 7
+// console.log(luckyNumbers[2]); // Prints 21
+
+// exercise
+
+// let heroes = ["Mario", "Sonic", "Link", "Zelda"];
+// console.log(heroes[1]);
+// let favoriteFood = ["malay", "dooro" , "galamud"];
+// console.log(favoriteFood[2]);
+
+// Phase 4 — Data Structures | Lesson 2: Array Methods (Push, Pop, Shift, Unshift)
+//push / pop: Handle adding or removing items from the end of your list.
+
+// unshift / shift: Handle adding or removing items from the beginning of your list.
+// let colors = ["Red", "Green"];
+
+// colors.push("Blue");     // Array becomes: ["Red", "Green", "Blue"]
+// colors.unshift("Yellow");// Array becomes: ["Yellow", "Red", "Green", "Blue"]
+
+// colors.pop();           // Drops "Blue". Array: ["Yellow", "Red", "Green"]
+// colors.shift();         // Drops "Yellow". Array: ["Red", "Green"]
+
+// exercise
+// let tools = ["Hammer", "Wrench"];
+// tools.push("Screwdriver");
+// tools.pop();
+
+// let track = ["Train", "Car"];
+//     track.shift();
+//     track.push("Plane");
+//     track.shift();
+
+// let simpleCart = ["Milk"];
+// // 1. Use .push() to add "Eggs" to the end
+// simpleCart.push("Eggs");
+// // 2. Use .unshift() to add "Bread" to the beginning
+// simpleCart.unshift("Eggs");
+// console.log(simpleCart);
+
+// Phase 4 — Data Structures | Lesson 3: Looping Through Arrays
+// let items = ["A", "B", "C"];
+// console.log(items.length); // Prints 3
+
+// let squad = ["Alex", "Sam", "Jordan"];
+
+// for (let i = 0; i < squad.length; i++) {
+//     console.log(squad[i]);
+// }
+
+// let tasks = ["Clean", "Cook", "Code"];
+
+// for (let i = 0; i < tasks.length; i++) {
+//     console.log(`Todo ${i + 1}: ${tasks[i]}`);
+// }
+
+// exercise
+// let values = [10, 20, 30];
+// for (let i = 0; i < values.length; i++) {
+//     console.log(values[i]);
+// }
+
+// let prices = [1.99, 5.50, 10.00, 20.00];
+
+// let animals = ["Lion", "Tiger", "Bear"];
+// for (let i = 0; i < animals.length; i++) {
+//     console.log("Look at the " + animals[i]);
+// }
+
+
+// Data Structures | Lesson 4: Object Basics
+// let player = {
+//     username: "Ninja99",  // "username" is the KEY, "Ninja99" is the VALUE
+//     level: 42,            // "level" is the KEY, 42 is the VALUE
+//     isOnline: true
+// };
+// console.log(player);
+// console.log(player.username); // Prints: Ninja99
+// console.log(player.level);    // Prints: 42
+
+
+// let book = {
+//     title: "The Hobbit",
+//     author: "J.R.R. Tolkien",
+//     pages: 310
+// };
+
+// console.log(`I am reading ${book.title} by ${book.author}.`);
+
+// exercise
+// let phone = {
+//     brand: "Apple",
+//     model: "iPhone 15",
+//     storageGB: 128
+// };
+// console.log(phone.model);
+
+// let profile = {
+//         name: "Sam",
+//         highScore: 9500
+// };
+// console.log(profile.highScore);
+
+// let myCar = {
+//     make: "Zukui",
+//     model : "B41f",
+//     year : "2020"
+// }
+// console.log(myCar.make);
+
+// Phase 4 — Data Structures | Lesson 5: Array of Objects
+
+// let contacts = [
+//     { name: "Ali", phone: "111-222" }, // Index 0
+//     { name: "Hassan", phone: "333-444" } // Index 1
+// ];
+
+// let products = [
+//     { title: "Gaming Mouse", price: 50 }, // Index 0
+//     { title: "Mechanical Keyboard", price: 120 }, // Index 1
+//     { title: "UltraWide Monitor", price: 350 }  // Index 2
+// ];
+
+// // Target the keyboard's price
+// let keyboardPrice = products[1].price;
+
+// console.log(`The keyboard costs $${keyboardPrice}`); // Prints $120
+
+// exercise
+
+// let movies = [
+// { title: "Star Wars", year: 1977 },
+// { title: "The Matrix", year: 1999 },
+// { title: "Inception", year: 2010 }
+// ];
+// console.log(movies[2].title);
+
+// let students = [
+//         { name: "John", grade: 90 },
+//         { name: "Sarah", grade: 85 }
+//     ];
+//     // How do you access Sarah's grade?
+//     console.log(students[1].grade);
+
+//     let watchlist = [
+//     { title: "Batman", rating: 9 },
+//     { title: "Iron Man", rating: 8 }
+// ];
+
+// for (let i = 0; i < watchlist.length; i++) {
+//     // Complete this log line to print the titles!
+//     console.log(watchlist[i].title);
+// }
+
+// Phase 5 — The Document Object Model (DOM) | Lesson 1: Introduction to the DOM
+
+// let title = document.querySelector("h1");
+// title.textContent = "Look at the Console!";
+// title.textContent = "Goodbye!";
+
+
+
+// // Grab the paragraph element using its CSS ID symbol (#)
+// let textParagraph = document.querySelector("#message");
+
+// // Update its look
+// textParagraph.textContent = "New Shiny Text!";
+
+// let maintitle = document.querySelector('#headline');
+// maintitle.textContent = "JavaScript has taken over the page!";
+
+// Phase 5 — The Document Object Model (DOM) | Lesson 2: Modifying Element Styles
+let heading = document.querySelector("h1");
+heading.style.color = "blue"; // Turns the text blue
+
+let alertBox = document.querySelector("#message");
+
+alertBox.style.backgroundColor = "red";
+alertBox.style.fontSize = "20px";
+alertBox.style.borderRadius = "10px";
+let myInfo = document.querySelector("#myInfo");
+myInfo.style.backgroundColor= "brown";
+myInfo.style.color= "white";
+myInfo.style.fontSize= "20px";
+
+// Phase 5 — The Document Object Model (DOM) | Lesson 3: Event Listeners (Click Events)
+
+// element.addEventListener("typeOfEvent", functionToRun);
+let myButton = document.querySelector("#actionBtn");
+
+// Tell the guard to listen for a click, then execute the arrow function code block!
+myButton.addEventListener("click", () => {
+    myButton.textContent = "Button Clicked! 🎉";
+});
+
+let text = document.querySelector("h1");
+text.style.color = "blue";
+
+text.addEventListener("click", () => {
+    text.style.color = "green";
+});
+</script>
+
+</body>
+</html>

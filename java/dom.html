@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+    <h1>Look at the Console!</h1>
+    <p id="message">Old Text</p>
+    <h1 id="headline">Original Headline</h1>
+    <h3 id="myInfo">Omar Abdiarasak Mohamed
+        he is student at Hormuud University
+        he learn computer staffs
+    </h3>
+    <button id="actionBtn">Click Me!</button>
+
+    <h1 id="title">Score:</h1>
+    <button id="scoreBtn">Click to Score!</button>
+  <script>
+    // Phase 5 — The Document Object Model (DOM) | Lesson 1: Introduction to the DOM
+
+// let title = document.querySelector("h1");
+// title.textContent = "Look at the Console!";
+// title.textContent = "Goodbye!";
+
+
+
+// // Grab the paragraph element using its CSS ID symbol (#)
+// let textParagraph = document.querySelector("#message");
+
+// // Update its look
+// textParagraph.textContent = "New Shiny Text!";
+
+// let maintitle = document.querySelector('#headline');
+// maintitle.textContent = "JavaScript has taken over the page!";
+
+// Phase 5 — The Document Object Model (DOM) | Lesson 2: Modifying Element Styles
+let heading = document.querySelector("h1");
+heading.style.color = "blue"; // Turns the text blue
+
+let alertBox = document.querySelector("#message");
+
+alertBox.style.backgroundColor = "red";
+alertBox.style.fontSize = "20px";
+alertBox.style.borderRadius = "10px";
+let myInfo = document.querySelector("#myInfo");
+myInfo.style.backgroundColor= "brown";
+myInfo.style.color= "white";
+myInfo.style.fontSize= "20px";
+
+// Phase 5 — The Document Object Model (DOM) | Lesson 3: Event Listeners (Click Events)
+
+// element.addEventListener("typeOfEvent", functionToRun);
+let myButton = document.querySelector("#actionBtn");
+
+// Tell the guard to listen for a click, then execute the arrow function code block!
+myButton.addEventListener("click", () => {
+    myButton.textContent = "Button Clicked! 🎉";
+});
+
+let text = document.querySelector("h1");
+text.style.color = "blue";
+
+text.addEventListener("click", () => {
+    text.style.color = "green";
+});
+// mini project
+let Score= 0;
+let currentHeading = document.querySelector("#title");
+let interactiveButn = document.querySelector("#scoreBtn");
+interactiveButn.addEventListener("click",()=>{
+  Score ++ ;
+  currentHeading.textContent= "Score: " + Score;;
+});
+  </script>
+</body>
+</html>
